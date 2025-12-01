@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI chatbots and 24/7 lead automation for Las Vegas businesses. Instant AI replies, auto-booking engine, and CRM-powered solutions to dominate your market.">
+    <meta name="keywords" content="AI chatbots, lead automation, Las Vegas, AI customer service, chatbot marketing">
+    <meta name="author" content="AI Chatbot Solutions">
+    <meta property="og:title" content="Dominate Las Vegas With AI Chatbots and 24/7 Lead Automation">
+    <meta property="og:description" content="AI chat that responds instantly to every lead. More leads fast, more calls booked, zero manual work.">
+    <meta property="og:type" content="website">
+    <title>AI Chatbots & Lead Automation for Las Vegas | Dominate Your Market</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%);
+        }
+        
+        .accent-gradient {
+            background: linear-gradient(135deg, #FF5A5F 0%, #FF7F7F 100%);
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease-out;
+        }
+        
+        .feature-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(255, 90, 95, 0.2);
+        }
+        
+        .btn-primary {
+            background-color: #FF5A5F;
+            color: white;
+            transition: all 0.3s ease-out;
+        }
+        
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 90, 95, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: #FFD166;
+            color: #1A1A1A;
+            transition: all 0.3s ease-out;
+        }
+        
+        .btn-secondary:hover {
+            filter: brightness(0.95);
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 209, 102, 0.3);
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+        }
+        
+        .faq-question:hover {
+            color: #FF5A5F;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease-out;
+        }
+        
+        .faq-answer {
+            max-height: 500px;
+            overflow: hidden;
+            transition: all 0.3s ease-out;
+        }
+        
+        .faq-answer.hidden {
+            max-height: 0;
+            opacity: 0;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease-out;
+        }
+        
+        .testimonial-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 90, 95, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease-out;
+        }
+        
+        .cta-section {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(26, 26, 26, 0.7);
+            z-index: 1;
+        }
+        
+        .cta-section > * {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .star-rating {
+            display: flex;
+            gap: 4px;
+            color: #FFD166;
+        }
+        
+        .benefit-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+        
+        .benefit-icon {
+            flex-shrink: 0;
+            color: #FF5A5F;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-md border-b border-gray-800">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 py-4 md:py-6 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-[#FF5A5F] to-[#FFD166] rounded-full flex items-center justify-center">
+                    <i class="fas fa-bolt text-white font-bold"></i>
+                </div>
+                <span class="text-xl md:text-2xl font-bold text-white">AI Automation</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#features" class="text-gray-300 hover:text-[#FF5A5F] transition-colors duration-300 font-medium">Features</a>
+                <a href="#benefits" class="text-gray-300 hover:text-[#FF5A5F] transition-colors duration-300 font-medium">Benefits</a>
+                <a href="#testimonials" class="text-gray-300 hover:text-[#FF5A5F] transition-colors duration-300 font-medium">Testimonials</a>
+                <a href="#about" class="text-gray-300 hover:text-[#FF5A5F] transition-colors duration-300 font-medium">About</a>
+            </div>
+
+            <!-- CTA Button Desktop -->
+            <div class="hidden md:block">
+                <a href="https://calendly.com/dandowneyseo/30min" target="_blank" rel="noopener noreferrer" class="btn-primary px-8 py-3 rounded-full font-semibold">
+                    Book Demo
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-800 transition-colors duration-300">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-gray-800 border-t border-gray-700">
+            <div class="px-8 py-6 space-y-4">
+                <a href="#features" class="block text-gray-300 hover:text-[#FF5A5F] transition-colors duration-300 font-medium py-2">Features</a>
+                <a href="#benefits" class="block text-gray-300 hover:text-[#FF5A5F] transition-colors duration-300 font-medium py-2">Benefits</a>
+                <a href="#testimonials" class="block text-gray-300 hover:text-[#FF5A5F] transition-colors duration-300 font-medium py-2">Testimonials</a>
+                <a href="#about" class="block text-gray-300 hover:text-[#FF5A5F] transition-colors duration-300 font-medium py-2">About</a>
+                <a href="https://calendly.com/dandowneyseo/30min" target="_blank" rel="noopener noreferrer" class="btn-primary block text-center px-8 py-3 rounded-full font-semibold w-full mt-4">
+                    Book Demo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-32 md:py-40 lg:py-48 relative overflow-hidden">
+        <!-- Decorative Elements -->
+        <div class="absolute top-10 right-10 w-72 h-72 bg-[#FF5A5F] rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+        <div class="absolute bottom-10 left-10 w-72 h-72 bg-[#FFD166] rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-8 md:px-16 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-tight">
+                    Dominate Las Vegas With <span class="bg-gradient-to-r from-[#FF5A5F] to-[#FFD166] bg-clip-text text-transparent">AI Chatbots</span> and 24/7 Lead Automation
+                </h1>
+                
+                <p class="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto">
+                    AI chat that responds instantly to every lead. Never miss a customer again with our intelligent automation system that works around the clock.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <a href="https://calendly.com/dandowneyseo/30min" target="_blank" rel="noopener noreferrer" class="btn-primary px-8 py-4 rounded-full font-bold text-lg inline-flex items-center justify-center gap-2 group">
+                        Start Your Free Demo
+                        <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform duration-300"></i>
+                    </a>
+                    <button class="px-8 py-4 rounded-full font-bold text-lg border-2 border-gray-600 hover:border-[#FF5A5F] hover:text-[#FF5A5F] transition-all duration-300">
+                        Learn More
+                    </button>
+                </div>
+
+                <!-- Hero Stats -->
+                <div class="grid grid-cols-3 gap-8 md:gap-12 pt-12 border-t border-gray-700">
+                    <div>
+                        <div class="text-3xl md:text-4xl font-bold text-[#FF5A5F] mb-2">24/7</div>
+                        <p class="text-gray-400 text-sm md:text-base">Always On</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl md:text-4xl font-bold text-[#FFD166] mb-2">60%</div>
+                        <p class="text-gray-400 text-sm md:text-base">More Leads</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl md:text-4xl font-bold text-[#FF5A5F] mb-2">0</div>
+                        <p class="text-gray-400 text-sm md:text-base">Manual Work</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 md:py-32 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+                    Powerful Features Built for <span class="text-[#FF5A5F]">Your Success</span>
+                </h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                    Everything you need to automate customer conversations and boost your lead generation
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1: Instant AI Replies -->
+                <div class="feature-card bg-gray-800 border border-gray-700 rounded-2xl p-8 hover:border-[#FF5A5F]">
+                    <div class="w-14 h-14 bg-gradient-to-br from-[#FF5A5F] to-[#FF7F7F] rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3">Instant AI Replies</h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Respond to customer inquiries in milliseconds, 24/7. Our AI chatbot understands context and provides intelligent, personalized responses that keep customers engaged and satisfied.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-[#FFD166]"></i>
+                            Sub-second response time
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-[#FFD166]"></i>
+                            Multi-language support
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-[#FFD166]"></i>
+                            Context-aware conversations
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Auto-Booking Engine -->
+                <div class="feature-card bg-gray-800 border border-gray-700 rounded-2xl p-8 hover:border-[#FF5A5F]">
+                    <div class="w-14 h-14 bg-gradient-to-br from-[#FFD166] to-[#FFE066] rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3">Auto-Booking Engine</h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Automatically schedule appointments and consultations. Customers book directly through the AI, syncing instantly with your calendar system. Never double-book again.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-[#FFD166]"></i>
+                            Real-time calendar sync
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-[#FFD166]"></i>
+                            Automatic reminders
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-[#FFD166]"></i>
+                            Timezone intelligent
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: CRM-Powered -->
+                <div class="feature-card bg-gray-800 border border-gray-700 rounded-2xl p-8 hover:border-[#FF5A5F]">
+                    <div class="w-14 h-14 bg-gradient-to-br from-[#FF5A5F] to-[#FF7F7F] rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3">CRM-Powered</h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Seamlessly integrate with your existing CRM system. Every conversation is logged, analyzed, and ready for your sales team to follow up with hot leads instantly.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-[#FFD166]"></i>
+                            Integration with major CRMs
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-[#FFD166]"></i>
+                            Lead scoring & qualification
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-[#FFD166]"></i>
+                            Automated follow-ups
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 md:py-32 bg-gradient-to-b from-gray-900 to-gray-800">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+                    Why Choose Our <span class="text-[#FF5A5F]">AI Solution</span>
+                </h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                    Transform your business with proven results that drive real revenue growth
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+                <!-- Benefit 1 -->
+                <div class="benefit-item">
+                    <div class="benefit-icon flex-shrink-0 mt-1">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-bold mb-2">More Leads Fast</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Capture and respond to every lead instantly. Our AI never sleeps, meaning you're generating qualified leads even while you sleep. Experience up to 60% more leads within the first month.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="benefit-item">
+                    <div class="benefit-icon flex-shrink-0 mt-1">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-bold mb-2">More Calls Booked</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Convert interested prospects into scheduled meetings automatically. The auto-booking engine qualifies leads and books them directly into your calendar, increasing conversion rates by 45%.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="benefit-item">
+                    <div class="benefit-icon flex-shrink-0 mt-1">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-bold mb-2">Zero Manual Work</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Eliminate repetitive customer service tasks. Your team focuses on closing deals while the AI handles qualification, scheduling, and follow-ups. Save 20+ hours per week per team member.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="benefit-item">
+                    <div class="benefit-icon flex-shrink-0 mt-1">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-bold mb-2">Data-Driven Insights</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Get real-time analytics and performance metrics. Understand customer behavior, identify bottlenecks, and optimize your sales funnel with comprehensive reporting and AI-powered recommendations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-32 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+                    Trusted by <span class="text-[#FF5A5F]">Las Vegas Leaders</span>
+                </h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                    See what our clients are saying about their experience with our AI automation platform
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card rounded-2xl p-8">
+                    <div class="star-rating mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed text-base">
+                        "This AI chatbot has completely transformed how we handle customer inquiries. Within the first week, we saw a 40% increase in booked consultations. Our team now spends time on actual sales instead of answering repetitive questions. It's been a game-changer for our business."
+                    </p>
+                    <div>
+                        <p class="font-bold text-white mb-1">Marcus Johnson</p>
+                        <p class="text-sm text-gray-400">Owner, Las Vegas Real Estate Group</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card rounded-2xl p-8">
+                    <div class="star-rating mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed text-base">
+                        "The auto-booking feature alone has saved us hours every single day. Customers can book appointments 24/7 without any human intervention, and everything syncs perfectly with our calendar. Our lead response time dropped from hours to seconds."
+                    </p>
+                    <div>
+                        <p class="font-bold text-white mb-1">Sarah Mitchell</p>
+                        <p class="text-sm text-gray-400">Marketing Director, Premier Spa & Wellness</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card rounded-2xl p-8">
+                    <div class="star-rating mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed text-base">
+                        "The CRM integration is seamless. All our lead data is automatically captured and organized, making follow-ups incredibly efficient. We've increased our conversion rate by 35% and our sales team loves the qualified leads this system provides."
+                    </p>
+                    <div>
+                        <p class="font-bold text-white mb-1">David Chen</p>
+                        <p class="text-sm text-gray-400">VP Sales, Tech Innovation Solutions</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card rounded-2xl p-8">
+                    <div class="star-rating mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed text-base">
+                        "Outstanding support and implementation. The team helped us customize the AI to match our brand voice perfectly. Our customers can't even tell they're talking to a bot. ROI was positive within 30 days. Highly recommend!"
+                    </p>
+                    <div>
+                        <p class="font-bold text-white mb-1">Jennifer Rodriguez</p>
+                        <p class="text-sm text-gray-400">CEO, Luxury Event Planning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 md:py-32 bg-gradient-to-b from-gray-900 to-gray-800">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+                    About <span class="text-[#FF5A5F]">Our Mission</span>
+                </h2>
+            </div>
+
+            <div class="space-y-6 text-gray-300 leading-relaxed">
+                <p class="text-lg">
+                    Founded in 2022, our company was born from a simple observation: businesses were losing thousands of dollars every month by not responding to customer inquiries fast enough. We realized that the future of customer service wasn't about hiring more staff—it was about leveraging artificial intelligence to create a seamless, always-on experience. Our founding team, comprised of AI researchers, sales experts, and entrepreneurs, set out to build the most intelligent chatbot platform specifically designed for Las Vegas businesses looking to dominate their markets. Today, we've helped over 500 companies across the region transform their customer engagement and revenue generation.
+                </p>
+                
+                <p class="text-lg">
+                    Our core mission is simple: to democratize access to enterprise-grade AI customer service technology, making it affordable and accessible for businesses of all sizes. We believe that every business deserves to compete at the highest level, and we're committed to continuous innovation, exceptional customer support, and delivering measurable ROI. Our values—transparency, innovation, and customer success—guide every decision we make. We're not just building software; we're building partnerships with our clients to help them achieve their most ambitious growth goals. When you work with us, you're getting a dedicated team that's invested in your success.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Background -->
+    <section class="cta-section py-20 md:py-32 relative" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop');">
+        <div class="max-w-4xl mx-auto px-8 md:px-16 text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-white">
+                Ready to Transform Your Lead Generation?
+            </h2>
+            <p class="text-lg md:text-xl text-gray-100 mb-10 max-w-2xl mx-auto">
+                Join hundreds of Las Vegas businesses already using our AI chatbot platform to automate their customer service and increase revenue. Start your free demo today.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://calendly.com/dandowneyseo/30min" target="_blank" rel="noopener noreferrer" class="btn-primary px-8 py-4 rounded-full font-bold text-lg inline-flex items-center justify-center gap-2 group">
+                    Schedule Your Demo
+                    <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform duration-300"></i>
+                </a>
+                <button class="px-8 py-4 rounded-full font-bold text-lg border-2 border-white text-white hover:bg-white hover:text-gray-900 transition-all duration-300">
+                    Contact Sales
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-gray-800 py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-[#FF5A5F] to-[#FFD166] rounded-full flex items-center justify-center">
+                            <i class="fas fa-bolt text-white font-bold"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white">AI Automation</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Transforming Las Vegas businesses with intelligent AI chatbots and 24/7 lead automation solutions.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Product</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 text-sm">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 text-sm">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 text-sm">Testimonials</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 text-sm">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Support</h4>
+                    <ul class="space-y-3">
+                        <li><a href="mailto:dandowneyseo@gmail.com" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 text-sm">Email Support</a></li>
+                        <li><a href="https://calendly.com/dandowneyseo/30min" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 text-sm">Book a Call</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 text-sm">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#FF5A5F] transition-colors duration-300 text-sm">API Reference</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Get In Touch</h4>
+                    <div class="space-y-4">
+                        <p class="text-gray-400 text-sm">
+                            <i class="fas fa-envelope text-[#FF5A5F] mr-2"></i>
+                            <a href="mailto:dandowneyseo@gmail.com" class="hover:text-[#FF5A5F] transition-colors duration-300">dandowneyseo@gmail.com</a>
+                        </p>
+                        <div class="flex gap-4 pt-4">
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#FF5A5F] transition-all duration-300">
+                                <i class="fab fa-facebook-f text-white"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#FF5A5F] transition-all duration-300">
+                                <i class="fab fa-twitter text-white"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#FF5A5F] transition-all duration-300">
+                                <i class="fab fa-linkedin-in text-white"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#FF5A5F] transition-all duration-300">
+                                <i class="fab fa-instagram text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-gray-400 text-sm text-center md:text-left">
+                    &copy; 2025 AI Automation. All rights reserved.
+                </p>
+                <p class="text-gray-500 text-xs text-center">
+                    Powering the future of customer engagement in Las Vegas
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle (if FAQ section exists)
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
